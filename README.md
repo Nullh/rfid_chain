@@ -1,1 +1,1 @@
-A simple Arduino Uno script to run three chear RC522 RFID readers.
+A simple Arduino Uno script to run three cheap RC522 RFID readers.
