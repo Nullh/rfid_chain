@@ -1,0 +1,5 @@
+{
+    "port": "COM1",
+    "board": "arduino:avr:uno",
+    "sketch": "stepper_turnThenBack_example.ino"
+}

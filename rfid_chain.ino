@@ -1,13 +1,12 @@
 #include <SPI.h>
 #include <MFRC522.h>
 
-#define RST_PIN1         9           // Configurable, see typical pin layout above
-#define SS_PIN1          10          // Configurable, see typical pin layout above
-
-#define RST_PIN2         3           // Configurable, see typical pin layout above
+// Pins 11, 12, 13 reserved for SPI
+#define RST_PIN1         9
+#define SS_PIN1          10
+#define RST_PIN2         3
 #define SS_PIN2          2 
-
-#define RST_PIN3         6           // Configurable, see typical pin layout above
+#define RST_PIN3         6
 #define SS_PIN3          5 
 
 #define UNLOCK_PIN       7
