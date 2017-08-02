@@ -4,16 +4,16 @@
 #include <Stepper.h>
 
 // Our stepper motor driver pins
-#define STP_PIN1      1
-#define STP_PIN2      4
-#define STP_PIN3      7
-#define STP_PIN4      8
+#define STP_PIN1      A5
+#define STP_PIN2      A4
+#define STP_PIN3      A3
+#define STP_PIN4      A2
 
 #define BTN_PIN       A0
 
 const int stepsPerRevolution = 2050;  // change this to fit the number of steps per 
 // revolution for your motor
-const int buttonPin = BTN_PIN; // trigger the action with this pin
+//const int buttonPin = BTN_PIN; // trigger the action with this pin
 const int ledPin = 13;
 
 int buttonState = 0;
@@ -29,13 +29,13 @@ void setup() {
   // initialize the LED pin as an output:
   pinMode(ledPin, OUTPUT);
   // initialize the pushbutton pin as an input:
-  pinMode(buttonPin, INPUT);
+  pinMode(BTN_PIN, INPUT);
 }
 
 void loop() {
 
   // read the state of the pushbutton value:
-  buttonState = digitalRead(buttonPin);
+  buttonState = digitalRead(BTN_PIN);
 
   // check if the pushbutton is pressed.
   // if it is, the buttonState is HIGH:
